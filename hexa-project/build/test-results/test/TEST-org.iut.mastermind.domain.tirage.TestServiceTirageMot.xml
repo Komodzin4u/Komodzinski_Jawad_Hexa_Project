@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Test du tirage alÃ©atoire:" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-10-11T14:23:43" hostname="JAWAD" time="1.063">
+<testsuite name="Test du tirage alÃ©atoire:" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-10-11T15:04:55" hostname="JAWAD" time="1.089">
   <properties/>
-  <testcase name="renvoie un mot de maniÃ¨re alÃ©atoire" classname="org.iut.mastermind.domain.tirage.TestServiceTirageMot" time="1.063"/>
+  <testcase name="renvoie un mot de maniÃ¨re alÃ©atoire" classname="org.iut.mastermind.domain.tirage.TestServiceTirageMot" time="1.089"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
