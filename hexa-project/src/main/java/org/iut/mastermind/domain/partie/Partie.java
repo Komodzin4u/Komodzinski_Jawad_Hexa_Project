@@ -50,10 +50,10 @@ public class Partie {
             reponse.compare(motPropose);
             nbEssais++;
             if (reponse.lettresToutesPlacees() || !verifieNbEssais()){
-                done();
+                partieTerminee=true;;
             }
         } else {
-            done();
+            partieTerminee=true;;
         }
         return reponse;
     }
@@ -66,10 +66,5 @@ public class Partie {
     // la partie est-elle terminée
     public boolean isTerminee() {
         return partieTerminee;
-    }
-
-    // la partie est terminée
-    void done() {
-        partieTerminee=true;
     }
 }
