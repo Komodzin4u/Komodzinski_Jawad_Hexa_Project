@@ -46,21 +46,16 @@ public class Partie {
     // on a terminé la partie
     public Reponse tourDeJeu(String motPropose) {
         Reponse reponse=new Reponse(motADeviner);
-        if(verifieNbEssais()){
+        if(nbEssais<NB_ESSAIS_MAX){
             reponse.compare(motPropose);
             nbEssais++;
-            if (reponse.lettresToutesPlacees() || !verifieNbEssais()){
-                partieTerminee=true;;
+            if (reponse.lettresToutesPlacees() || !(nbEssais<NB_ESSAIS_MAX)){
+                partieTerminee=true;
             }
         } else {
-            partieTerminee=true;;
+            partieTerminee=true;
         }
         return reponse;
-    }
-
-    // vérifie que le nombre d'essais max n'est pas atteint
-    private boolean verifieNbEssais() {
-        return nbEssais<NB_ESSAIS_MAX;
     }
 
     // la partie est-elle terminée
